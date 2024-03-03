@@ -1,0 +1,716 @@
+@font-face {
+    font-family: "Fraunces";
+    src: url("assets/fonts/fraunces/static/Fraunces_144pt-SemiBold.ttf");
+    font-family: "Manrope";
+    src: url(assets/fonts/manrope/Manrope-VariableFont_wght.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Manrope";
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+
+header{
+    background-image: url(assets/images/bg-pattern-1.svg),url(assets/images/bg-pattern-2.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: -8% 32%,104% 83%;
+    background-color: #24053E;
+    height: 600px;
+    position: relative;
+    width: 100%;
+    color: white;
+    z-index: 1;
+}
+.headerContainer{
+    width: 90%;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.headerNav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 3rem;
+}
+.headerNav a{
+    color: white;
+    transition: color .2s ease-in;
+}
+.headerNav a:hover{
+    color: #44FFA1;
+}
+
+.greenLine{
+    background-color:#44FFA1;
+    width: 100%;
+    height: 3px;
+    margin-top: 3px;
+}
+
+
+.navTitle{
+    margin-top: 5rem;
+}
+.navTitle h1{
+    text-align: center;
+    font-size: 80px;
+    width: 50%;
+    margin: 0 auto;
+    line-height: 1;
+    font-family: "Fraunces 144pt";
+}
+.navTitle span{
+    text-decoration: underline;
+    text-decoration-color: #44FFA1;
+    font-family: "Fraunces 144pt";
+}
+
+.header-btn{
+    display: block;
+    margin: 2rem auto;
+    width: 160px;
+    height: 60px;
+    font-size: 18px;
+    color: black;
+    background-color: #44FFA1;
+    border: none;
+    font-weight: 700;
+    line-height: 32px; /* 200% */
+    letter-spacing: -0.16px;
+    transition: all .2s ease-in;
+    cursor: pointer;
+}
+
+.header-btn:hover{
+    background-color: #24053E;
+    color: #44FFA1;
+    border: 1px solid #44FFA1;
+}
+
+
+.headerWave {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.headerWave svg {
+    position: relative;
+    display: block;
+    width: calc(283% + 1.3px);
+    height: 116px;
+}
+
+.headerWave .shape-fill {
+    fill: #24053E;
+}
+
+.smartPhoneImg{
+    display: block;
+    width: 715px;
+    height: 427px;
+    position: absolute;
+    top: 80%;
+    left: 33%;
+    z-index: 3;
+}
+
+/* middle-page */
+
+.contentPage{
+    /* background-color: #FCF8FF; */
+    background-color:#FCF8FF;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    color: rgb(0, 0, 0);
+    margin-top: 1rem;
+    height: 960px;
+}
+
+.featShape-fill {
+    fill: #FCF8FF;
+}
+.contentFlexContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30rem;
+    padding-bottom: 8rem;
+    margin-inline-start: 10rem;
+    margin-inline-end: 10rem;
+}
+.infoNumber{
+    width: 56px;
+    height: 56px;
+    border: 1px solid #24053E;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0rem auto 4rem auto;
+}
+.feature{
+    text-align: center;
+    padding: 0 3rem 0 0;
+}
+.feature h2{
+    text-align: center;
+    font-family: "Fraunces 144pt";
+    font-size: 32px;
+    margin-bottom: 2rem;
+}
+.feature p{
+    color: #584D62;
+}
+
+/* bottom */
+.bottomPage{
+    margin-top: 20rem;
+}
+.founderFlexContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.founderImage{
+    height: 453px;
+    width: 450px;
+    position: absolute;
+    top: -40%;
+    left: 19%;
+    z-index: -1;
+}
+.founderCard{
+    background-color: #24053E;
+    color: white;
+    width: 730px;
+    height: 413px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 18rem;
+}
+.cardContent{
+    padding: 0rem 4rem;
+}
+.cardTitle{
+    font-size: 48px;
+    padding-bottom: 2rem;
+    font-family: "Fraunces";
+}
+.founderTestimonio{
+    font-size: 16px;
+    padding-bottom: 2rem;
+}
+.apply-btn{
+    width: 172px;
+    height: 55px;
+    background-color: #44FFA1;
+    color: #24053E;
+    font-size: 16px;
+    font-weight: 700;
+    transition: all .2s ease-in;
+}
+.apply-btn:hover{
+    background-color: #24053E;
+    color: #44FFA1;
+    border: 1px solid #44FFA1;
+    cursor: pointer;
+}
+.founderCircle{
+    position: absolute;
+    top: 64%;
+    left: 62%;
+
+}
+
+footer{
+    margin: 6rem 0% 3rem 0%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+}
+footer img{
+    height: 15px;
+    margin-left: 22px;
+    margin-top: 3rem;
+    cursor: pointer;
+}
+.footerLogo{
+    height: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Media queries */
+@media screen and (max-width: 1369px){
+    .smartPhoneImg{
+        left: 24%;
+    }
+    .founderImage{
+        height: 453px;
+        width: 450px;
+    }
+}
+@media screen and (max-width: 1280px){
+    .smartPhoneImg{
+        top: 93%;
+        left: 16%;
+    }
+    header{
+        background-position: -35% 32%,111% 83%;
+    }
+    .contentFlexContainer{
+        margin-inline-start: 5rem;
+        margin-inline-end: 5rem;
+    }
+    .feature{
+        padding: 0 2rem 0 0;
+    }
+    .founderCard{
+        margin-left: 20rem;
+        width: 630px;
+        height: 350px;
+    }
+    .founderImage {
+        top: -46%;
+        left: 10%;
+        
+    }
+    .founderCircle{
+        top: 57%;
+        left: 66%;
+    }
+
+}
+@media screen and (max-width: 1024px){
+    header{
+        height: 612px;
+        
+    }
+    .navTitle h1{
+        width: 51%;
+    }
+    .headerWave{
+        top: 97%;
+    }
+    .smartPhoneImg{
+        top: 73%;
+        left: 16%;
+    }
+    .feature{
+        display: grid;
+        grid-template-columns: 53px 493px;
+        grid-template-rows: 60px 80px;
+    }
+    .contentFlexContainer{
+        display:grid;
+        padding-top: 23rem;
+    }
+    .infoNumber{
+        grid-column: 1;
+        grid-row: 2;
+        margin-bottom: 0;
+        display: grid;
+        justify-content: center;
+    }
+    .feature h2{
+        margin-bottom: 0px;
+    }
+    .title1, .title2, .title3{
+        grid-row: 1;
+        align-items:center
+    }
+    .info1-info, .info2-info, .info3-info{
+        grid-row: 2;
+        margin-top: 12px;
+    }
+    .title1 , .info1-info{
+        grid-column: 2;
+        display: flex;
+        align-content: flex-start;
+        margin-inline-start: 32px;
+        text-align: start;
+    }
+    .title2, .info2-info{
+        grid-column: 2;
+        display: flex;
+        align-content: flex-start;
+        margin-inline-start: 32px;
+        text-align: start;
+    }
+    .title3, .info3-info{
+        grid-column: 2;
+        display: flex;
+        align-content: flex-start;
+        margin-inline-start: 32px;
+        text-align: start;
+    }
+    .founderCard{
+        margin-left: 22rem;
+        width: 630px;
+        height: 350px;
+    }
+    .founderImage {
+        top: -48%;
+        left: 0%;
+    }
+
+}
+
+@media screen and (max-width: 990px){
+    header {
+        height: 625px;
+    }
+    .navTitle h1 {
+        width: 66%;
+    }
+    .smartPhoneImg {
+        top: 75%;
+        left: 16%;
+    }
+    .headerWave {
+        top: 98%;
+    }
+    .contentFlexContainer {
+        padding-top: 21rem;
+    }
+    
+}
+
+@media screen and (width: 880px){
+    header {
+        height: 625px;
+        background-position: -40% 32%, 112% 83%;    
+    }
+    .smartPhoneImg {
+        top: 75%;
+        left: 10%;
+    }
+    
+}
+@media screen and (max-width: 770px){
+    header {
+        height: 625px;
+        background-position: -56% 32%, 116% 83%;    
+    }
+    .navTitle h1 {
+        width: 84%;
+    }
+    .smartPhoneImg {
+        top: 74%;
+        left: 7%;
+    }
+    .bottomPage {
+        margin-top: 16rem;
+    }
+    .founderImage {
+        height: 265px;
+        width: 267px;
+        top: -28%;
+        left: 3%;
+        
+    }
+    .founderCard {
+        margin-left: 13rem;
+        width: 514px;
+        height: 375px;
+    }
+    .cardContent {
+        padding: 0rem 3rem;
+    }
+
+    
+}
+
+
+@media screen and (max-width: 460px) {
+    header{
+        height: 404px;
+        background-image: none;
+    }
+    .headerWave{
+        top: 98%;
+    }
+    .navTitle h1{
+        font-size: 50px;
+        width: 76%;
+    }
+    .header-btn{
+        font-size: 16px;
+        width: 133px;
+        height: 55px;
+    }
+    .smartPhoneImg{
+        top: 88%;
+        left: 22%;
+        width: 292px;
+        height: 168px;
+    }
+    .navTitle h1{
+        font-size: 32px;
+        width: 78%;
+    }
+    .header-btn{
+        font-size: 16px;
+        width: 123px;
+        height: 45px;
+    }
+    .contentFlexContainer{
+        padding-top: 12rem;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+    }
+    .feature{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 60px 80px 84px;
+        margin-bottom: 3rem;
+        padding: 0;
+    }
+  
+    .infoNumber{
+        grid-row: 1;
+        grid-column: 2;
+        margin-bottom: 0;
+        display: grid;
+        justify-content: center;
+    }
+    .title1, .title2, .title3{
+        grid-row: 2;
+        margin: 0px;
+        justify-content: center;
+        align-items: center;
+    }
+    .info1-info,.info2-info, .info3-info{
+        grid-row: 3;
+        display: flex;
+        align-content: center;
+        text-align: center;
+        margin: 0px;
+        width: 343px;
+    }
+    .founderCard{
+        margin-left: 0;
+        width: 370px;
+        height: 375px;
+        justify-content: center;
+    }
+    .founderImage {
+        top: -58%;
+        left: 17%;
+        height: 265px;
+        width: 267px;
+    }
+    .cardTitle{
+        font-size: 32px;
+        padding-bottom: 2rem;
+        font-family: "Fraunces";
+        text-align: center;
+    }
+    .founderCircle{
+        position: absolute;
+        top: 0%;
+        left: -80%;
+    
+    }
+    .founderTestimonio{
+        text-align: center;
+        width: 281px;
+    }
+    .apply-btn{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+/* @media screen and (max-width: 844px) {
+    header{
+        background-image: none;
+        height: 362px;
+        width: 100%;
+    }
+    .smartPhoneImg{
+        top: 93%;
+        left: 21%;
+        width: 292px;
+        height: 168px;
+    }
+    .navTitle h1{
+        font-size: 32px;
+        width: 78%;
+    }
+    .header-btn{
+        font-size: 16px;
+        width: 123px;
+        height: 45px;
+    }
+    .contentFlexContainer{
+        padding-top: 12rem;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+    }
+    .feature{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 60px 80px 84px;
+        margin-bottom: 3rem;
+        padding: 0;
+    }
+  
+    .infoNumber{
+        grid-row: 1;
+        grid-column: 2;
+        margin-bottom: 0;
+        display: grid;
+        justify-content: center;
+    }
+    .title1, .title2, .title3{
+        grid-row: 2;
+        margin: 0px;
+        justify-content: center;
+        align-items: center;
+    }
+    .info1-info,.info2-info, .info3-info{
+        grid-row: 3;
+        display: flex;
+        align-content: center;
+        text-align: center;
+        margin: 0px;
+        width: 343px;
+    }
+    .founderCard{
+        margin-left: 0;
+        width: 370px;
+        height: 375px;
+        justify-content: center;
+    }
+    .founderImage {
+        top: -58%;
+        left: 17%;
+        height: 265px;
+        width: 267px;
+    }
+    .cardTitle{
+        font-size: 32px;
+        padding-bottom: 2rem;
+        font-family: "Fraunces";
+        text-align: center;
+    }
+    .founderCircle{
+        position: absolute;
+        top: 0%;
+        left: -80%;
+    
+    }
+    .founderTestimonio{
+        text-align: center;
+        width: 281px;
+    }
+    .apply-btn{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+} */
+@media screen and (max-width: 400px) {
+    header{
+        background-image: none;
+        height: 340px;
+        width: 100%;
+    }
+    .smartPhoneImg{
+        top: 93%;
+        left: 15%;
+        width: 300px;
+        height: 190px;
+    }
+    .navTitle h1{
+        font-size: 32px;
+        width: 78%;
+    }
+    .header-btn{
+        font-size: 16px;
+        width: 123px;
+        height: 45px;
+    }
+    .contentFlexContainer{
+        padding-top: 12rem;
+        margin-inline-start: 0px;
+        margin-inline-end: 00px;
+    }
+}
+@media screen and (max-width: 375px) {
+    header{
+        background-image: none;
+        height: 416px;
+        width: 100%;
+    }
+    .headerWave{
+        top: 94%;
+    }
+    .smartPhoneImg{
+        top: 82%;
+        left: 18%;
+        width: 300px;
+        height: 190px;
+    }
+    .navTitle h1{
+        font-size: 32px;
+        width: 78%;
+    }
+    .header-btn{
+        font-size: 16px;
+        width: 123px;
+        height: 45px;
+    }
+    .contentFlexContainer{
+        padding-top: 12rem;
+        margin-inline-start: 0px;
+        margin-inline-end: 00px;
+    }
+}
+@media screen and (max-width: 365px) {
+    header{
+        height: 392px;
+    }
+    .headerWave{
+        top: 96%;
+    }
+    .smartPhoneImg{
+        top: 82%;
+        left: 18%;
+        width: 300px;
+        height: 190px;
+    }
+}
+
+
+
